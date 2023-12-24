@@ -1,0 +1,24 @@
+<h2>
+    LOGIN
+</h2>
+
+<form class="example-form" (ngSubmit)="login()">
+    <p>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Ex. pat@example.com" name="email" [(ngModel)]="email">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="password" name="password" [(ngModel)]="password">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <button mat-raised-button type="submit">
+            Login
+        </button>
+    </p>
+</form>
